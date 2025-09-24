@@ -7,7 +7,10 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Urban New Concept',
   description: "Fabulous Hair Isn't Just Style",
-  generator: 'v0.app',
+  generator: 'Urban New Concept',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
