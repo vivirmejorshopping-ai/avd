@@ -1,0 +1,332 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Updated to use only #9fa089 color scheme */
+.text-sage {
+  color: #9fa089;
+}
+
+.bg-sage {
+  background-color: #9fa089;
+}
+
+.hover\:bg-sage\/90:hover {
+  background-color: rgba(159, 160, 137, 0.9);
+}
+
+.border-sage {
+  border-color: #9fa089;
+}
+
+.hover\:border-sage:hover {
+  border-color: #9fa089;
+}
+
+/* Neutral colors for backgrounds and text */
+.bg-neutral-50 {
+  background-color: #fafaf9;
+}
+
+.bg-neutral-100 {
+  background-color: #f5f5f4;
+}
+
+.text-neutral-600 {
+  color: #525252;
+}
+
+.text-neutral-800 {
+  color: #262626;
+}
+
+/* Added mobile header scroll effects */
+.header-scrolled {
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(159, 160, 137, 0.15);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header-scrolled h1 {
+  color: #9fa089;
+}
+
+.header-scrolled .book-button {
+  border-color: #9fa089;
+  color: #9fa089;
+}
+
+.header-scrolled .book-button:hover {
+  background-color: #9fa089;
+  color: white;
+}
+
+/* Added 3D mobile menu effects */
+.mobile-menu {
+  transform: perspective(1000px) rotateX(-90deg);
+  transform-origin: top center;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  width: 100%;
+  max-width: none;
+}
+
+.mobile-menu.open {
+  transform: perspective(1000px) rotateX(0deg);
+  opacity: 1;
+}
+
+.mobile-menu-item {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.open .mobile-menu-item {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mobile-menu.open .mobile-menu-item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.mobile-menu.open .mobile-menu-item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.mobile-menu.open .mobile-menu-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.mobile-menu.open .mobile-menu-item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+/* Added 3D perspective and card effects for services page */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* 3D Card hover effects */
+.group:hover .group-hover\:rotate-y-12 {
+  transform: rotateY(12deg);
+}
+
+.group:hover .group-hover\:rotate-y--12 {
+  transform: rotateY(-12deg);
+}
+
+/* Enhanced card shadows and transforms */
+.card-3d {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.card-3d:hover {
+  transform: translateY(-8px) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Service card specific animations */
+.service-card {
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: center center;
+}
+
+.service-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(159, 160, 137, 0.1);
+}
+
+.service-card:nth-child(2):hover {
+  transform: translateY(-12px) scale(1.02) rotateY(-2deg);
+}
+
+.service-card:nth-child(3):hover {
+  transform: translateY(-12px) scale(1.02) rotateY(2deg);
+}
+
+/* Icon animations */
+.service-icon {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1) rotateY(10deg);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .service-card:hover {
+    transform: translateY(-6px) scale(1.01);
+  }
+
+  .service-card:nth-child(2):hover,
+  .service-card:nth-child(3):hover {
+    transform: translateY(-6px) scale(1.01);
+  }
+}
+
+/* Added mobile layout fixes to prevent white space issues */
+html,
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Fix mobile viewport issues */
+@media (max-width: 768px) {
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+
+  html {
+    height: -webkit-fill-available;
+  }
+
+  /* Prevent horizontal scroll on mobile */
+  .container {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* Fix mobile menu positioning */
+  .mobile-menu {
+    max-width: calc(100vw - 3rem);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  /* Ensure proper mobile spacing */
+  .mobile-menu .p-6 {
+    padding: 1.5rem 1rem;
+  }
+}
