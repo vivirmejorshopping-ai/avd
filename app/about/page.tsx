@@ -19,35 +19,31 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto mb-20">
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-neutral-100 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-2xl">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                  <h2 className="text-3xl font-light text-sage mb-6">Our Journey</h2>
-                  <div className="space-y-4 text-neutral-600 leading-relaxed">
-                    <p>
-                      We're <strong className="text-sage">Rodrigo and Murillo</strong>, a father-and-son duo who have
-                      dedicated our lives to hairstyling.
-                    </p>
-                    <p>
-                      With <strong>17 years of experience</strong>, Rodrigo has mastered the craft, while Murillo, with{" "}
-                      <strong>8 years in the industry</strong>, brings fresh techniques and creativity.
-                    </p>
-                    <p>
-                      We learned everything in Brazil, but we're always updating our skills because we love what we do!
-                    </p>
-                    <p>
-                      Our journey as salon owners started in <strong>November 2022 in Hornby</strong>. In{" "}
-                      <strong>2024</strong>, we moved to Sockburn to continue offering top-quality services in a
-                      welcoming, family-friendly space.
-                    </p>
-                    <p>
-                      And <strong>2025</strong> we opened our second unit, a barbershop on the busy Colombo St.
-                    </p>
-                  </div>
-                </div>
-                <div className="bg-gradient-to-br from-sage/10 to-sage/5 rounded-xl p-8 text-center transform hover:rotate-1 transition-transform duration-300">
-                  <div className="text-6xl mb-4">👨‍👦</div>
-                  <h3 className="text-xl font-medium text-sage mb-2">Family Business</h3>
-                  <p className="text-neutral-600">Father and son dedicated to hairstyling excellence</p>
-                </div>
+<div>
+  <h2 className="text-3xl font-light text-sage mb-6">Our Journey</h2>
+  <div className="space-y-4 text-neutral-600 leading-relaxed">
+    <p>
+      We are <strong className="text-sage">Rodrigo and Murillo</strong> — a father-and-son team passionate about the art of hairstyling.
+    </p>
+    <p>
+      Rodrigo brings over <strong>17 years of expertise</strong>, combining precision and mastery, while Murillo adds <strong>8 years of fresh perspective</strong>, modern techniques, and creativity.
+    </p>
+    <p>
+      Trained in Brazil, we continuously refine our skills to stay ahead in the industry, driven by a genuine love for what we do.
+    </p>
+    <p>
+      Our journey as salon owners began in November 2022 in Hornby. In 2024, we relocated to Sockburn, creating a welcoming, family-friendly space where quality and care come first. By 2025, we proudly expanded with a second location — a barbershop on Colombo Street — bringing our commitment to excellence to even more clients.
+    </p>
+    <p>
+      In September 2025, we decided to rent a chair at Future Angels in Wigram, ensuring our clients continue to enjoy the comfort and quality they deserve.
+    </p>
+  </div>
+</div>
+<div className="bg-gradient-to-br from-sage/10 to-sage/5 rounded-xl p-8 text-center transform hover:rotate-1 transition-transform duration-300">
+  <div className="text-6xl mb-4">👨‍👦</div>
+  <h3 className="text-xl font-medium text-sage mb-2">Family Business</h3>
+  <p className="text-neutral-600">Father and son dedicated to hairstyling excellence</p>
+</div>
               </div>
             </div>
           </div>
