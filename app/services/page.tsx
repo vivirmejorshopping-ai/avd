@@ -132,9 +132,14 @@ export default function ServicesPage() {
 
                 <div className="text-left space-y-4 text-sm">
                   <div className="flex justify-between items-start border-b border-neutral-100 pb-2">
-                    <span className="flex-1 pr-4 text-neutral-700">BRAZILIAN KERATIN BLOWOUT:</span>
-                    <span className="font-semibold text-sage whitespace-nowrap">$199 - $350</span>
-                  </div>
+  <span className="flex-1 pr-4 text-neutral-700">
+    BRAZILIAN KERATIN BLOWOUT:
+    <p className="text-xs text-neutral-500 italic mt-1">
+      (SUPER STRONG FRIZZ & VOLUME REDUCER) (LASTS FOR ABOUT 2-3 MONTHS)
+    </p>
+  </span>
+  <span className="font-semibold text-sage whitespace-nowrap">$199 - $350</span>
+</div>
                   <p className="text-xs text-neutral-500 italic mb-2">
                     (SUPER STRONG FRIZZ & VOLUME REDUCER) (LASTS FOR ABOUT 2-3 MONTHS)
                   </p>
@@ -151,10 +156,13 @@ export default function ServicesPage() {
                     <span className="flex-1 pr-4 text-neutral-700">CURLS / STRAIGHTENER:</span>
                     <span className="font-semibold text-sage whitespace-nowrap">$15 - $50</span>
                   </div>
-                  <div className="flex justify-between items-start border-b border-neutral-100 pb-2">
-                    <span className="flex-1 pr-4 text-neutral-700">REPAIR HAIR TREATMENT:</span>
-                    <span className="font-semibold text-sage whitespace-nowrap">$50</span>
-                  </div>
+<div className="flex justify-between items-start border-b border-neutral-100 pb-2">
+  <span className="flex-1 pr-4 text-neutral-700">
+    REPAIR HAIR TREATMENT:
+    <p className="text-xs text-neutral-500 italic mt-1">($30 WHEN YOU DO ANY OTHER SERVICE)</p>
+  </span>
+  <span className="font-semibold text-sage whitespace-nowrap">$50</span>
+</div>
                   <p className="text-xs text-neutral-500 italic">($30 WHEN YOU DO ANY OTHER SERVICE)</p>
 
                   <div className="flex justify-between items-start border-b border-neutral-100 pb-2">
