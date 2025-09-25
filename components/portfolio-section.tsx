@@ -25,12 +25,12 @@ const portfolioItems = [
   {
     title: "Medium Brown",
     subtitle: "Balayage",
-    image: "/images/5.jpg",
+    image: "/images/6.jpg",
   },
   {
     title: "Soft Ash",
     subtitle: "Balayage",
-    image: "/images/6.jpg",
+    image: "/images/5.jpg",
   },
 ];
 
