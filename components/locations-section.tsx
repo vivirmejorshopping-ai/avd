@@ -99,7 +99,7 @@ export function LocationsSection() {
                   rel="noopener noreferrer"
                   className="block w-full bg-[#9fa089] text-white py-3 px-6 rounded-md hover:bg-[#8a9179] transition-colors duration-300 font-medium text-center"
                 >
-                  BOOK AT THIS LOCATION
+                  GET DIRECTIONS
                 </a>
               </div>
             </div>
