@@ -1721,6 +1721,9 @@ font-weight: 100 900;
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .text-\[0\.7em\] {
+    font-size: 0.7em;
+  }
   .text-\[0\.8rem\] {
     font-size: 0.8rem;
   }
@@ -4366,6 +4369,11 @@ font-weight: 100 900;
     @media (width >= 48rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .md\:text-\[0\.8em\] {
+    @media (width >= 48rem) {
+      font-size: 0.8em;
     }
   }
   .md\:opacity-0 {
