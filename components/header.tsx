@@ -46,12 +46,12 @@ export function Header() {
           <div className="flex items-center justify-between">
             <Link href="/" onClick={() => handleNavigation("/")}>
               <h1
-                className={`flex flex-col items-center text-center transition-colors duration-300 cursor-pointer
+                className={`text-sm md:text-lg font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
                   ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
                 `}
               >
-                <span className="text-lg md:text-xl font-normal tracking-[0.2em] uppercase">URBAN NEW CONCEPT</span> <br />
-                <span className="text-xs md:text-sm tracking-wide">By Murillo & Rodrigo</span>
+                URBAN NEW CONCEPT <br />
+                <span className="text-xs md:text-sm">By Murillo & Rodrigo</span>
               </h1>
             </Link>
 
@@ -121,7 +121,7 @@ export function Header() {
               </Link>
             </nav>
 
-            <div className="fixed top-6 right-6 z-50 hidden md:block">
+            <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 hidden md:block">
               <Button
                 asChild
                 variant="outline"
