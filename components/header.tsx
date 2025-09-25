@@ -149,14 +149,14 @@ return (
                   onClick={() => handleNavigation("/services")}
                   className="block text-sage hover:text-sage/80 transition-colors font-medium py-1"
                 >
-                  Services
+                  Services now
                 </Link>
                 <Link
                   href="/price-list"
                   onClick={() => handleNavigation("/price-list")}
                   className="block text-sage hover:text-sage/80 transition-colors font-medium py-1"
                 >
-                  Barbershop Price List
+                  Barbershop Price Liste 
                 </Link>
                 <Link
                   href="/contact"
@@ -176,7 +176,7 @@ return (
                   asChild
                   className="w-full bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-sm uppercase tracking-wide mt-2"
                 >
-                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HEREs</a>
+                  <a href="https://www.fresha.com/pt/p/msdasd3402928">BOOK HEREs</a>
                 </Button>
               </div>
             </div>
