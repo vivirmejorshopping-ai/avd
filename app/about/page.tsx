@@ -51,13 +51,6 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto mb-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-light text-sage mb-4">What Makes Us Different?</h2>
-              <p className="text-lg text-neutral-600">
-                Our techniques are unlike <strong>any other</strong> salon in New Zealand!
-              </p>
-              <p className="text-neutral-600 mt-2">
-                We are also very honest about what can and cannot be done to your hair, without creating false
-                expectations.
-              </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white rounded-xl shadow-lg p-8 border border-neutral-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:rotate-1">
