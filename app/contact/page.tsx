@@ -1,7 +1,8 @@
 "use client";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+
 import { MapPin, Clock, Phone, Mail, Send } from "lucide-react";
 
 export default function ContactPage() {
