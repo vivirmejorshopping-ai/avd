@@ -62,7 +62,7 @@ export function Header() {
               </div>
             </Link>
 
-            {/* Navigation - Center */}
+            {/* Navigation - Center (Desktop) */}
             <div className="flex-1 flex justify-center hidden md:flex">
               <nav className="flex items-center space-x-8">
                 <Link
@@ -113,10 +113,11 @@ export function Header() {
               </nav>
             </div>
 
-            {/* Right content - Mobile and Button */}
+            {/* Content - Right (Mobile and Desktop) */}
             <div className="flex items-center space-x-3 md:space-x-0">
               {/* Mobile: Button and hamburger */}
-              <div className="flex items-center space-x-3 md:hidden flex-row-reverse">
+              {/* Alinhamento para mobile (foto) */}
+              <div className="flex items-center space-x-3 md:hidden">
                 <button
                   onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                   className={`p-2 transition-colors duration-300 ${
@@ -187,6 +188,14 @@ export function Header() {
                 >
                   About
                 </Link>
+                <Button
+                  asChild
+                  className="bg-transparent border border-white/30 hover:bg-white hover:text-black text-white px-8 py-3 text-sm font-normal rounded-sm uppercase tracking-wide transition-colors duration-300"
+                >
+                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">
+                    BOOK HERE
+                  </a>
+                </Button>
               </div>
             </div>
           )}

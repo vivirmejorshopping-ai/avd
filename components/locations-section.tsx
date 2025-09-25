@@ -20,7 +20,7 @@ const locations = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Gxv9OQiYchIvj8kXdMGtgHwEl6qBmU.png",
     description: "Professional barbering services with a modern touch for the discerning gentleman",
     services: ["Classic Cuts", "Beard Trim", "Fade Cut", "Kids Cut","Women's Dry Cut"],
-    hours: "Mon-Sat: 9AM-7PM",
+    hours: "Tue - Sat: 10AM-5PM Sun: 10am - 3pm",
     bookingText: "Just Walk in",
     mapLink:
       "https://www.google.com/maps/dir//Urban+New+Concept+-+Barbershop+456+Colombo+Street,+Sydenham,+Christchurch+8023/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x6d318ba564845c0b:0x333ca5b65dfda6ee?sa=X&ved=1t:57443&ictx=111",
