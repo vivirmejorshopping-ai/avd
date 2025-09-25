@@ -39,80 +39,71 @@ export function LocationsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {locations.map((location, index) => {
-            const bookingIcon =
-              location.bookingText === "Book Online" ? (
-                <Phone className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
-              ) : (
-                <span className="text-xl text-[#9fa089] mr-3 flex-shrink-0">🚶‍♂️</span>
-              )
-
-            return (
-              <div
-                key={index}
-                className="bg-neutral-50 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group"
-              >
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={location.image || "/placeholder.svg"}
-                    alt={`${location.type} - ${location.address}`}
-                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <div className="flex items-center">
-                      <div className="w-10 h-10 bg-[#9fa089] rounded-full flex items-center justify-center mr-3">
-                        <location.icon className="h-5 w-5 text-white" />
-                      </div>
-                      <h3 className="text-xl font-medium text-white">{location.type}</h3>
+          {locations.map((location, index) => (
+            <div
+              key={index}
+              className="bg-neutral-50 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 group"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={location.image || "/placeholder.svg"}
+                  alt={`${location.type} - ${location.address}`}
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 bg-[#9fa089] rounded-full flex items-center justify-center mr-3">
+                      <location.icon className="h-5 w-5 text-white" />
                     </div>
+                    <h3 className="text-xl font-medium text-white">{location.type}</h3>
                   </div>
-                </div>
-
-                <div className="p-8">
-                  <p className="text-neutral-600 mb-6 leading-relaxed">{location.description}</p>
-
-                  <div className="mb-6">
-                    <h4 className="text-sm font-medium text-[#9fa089] mb-3 flex items-center">
-                      <Scissors className="h-4 w-4 mr-2" />
-                      Services
-                    </h4>
-                    <div className="grid grid-cols-2 gap-2">
-                      {location.services.map((service, serviceIndex) => (
-                        <div key={serviceIndex} className="text-sm text-neutral-600">
-                          • {service}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-center text-neutral-600">
-                      <MapPin className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
-                      <span className="text-sm">{location.address}</span>
-                    </div>
-                    <div className="flex items-center text-neutral-600">
-                      <Clock className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
-                      <span className="text-sm">{location.hours}</span>
-                    </div>
-                    <div className="flex items-center text-neutral-600">
-                      {bookingIcon}
-                      <span className="text-sm">{location.bookingText}</span>
-                    </div>
-                  </div>
-
-                  <a
-                    href={location.mapLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full bg-[#9fa089] text-white py-3 px-6 rounded-md hover:bg-[#8a9179] transition-colors duration-300 font-medium text-center"
-                  >
-                    BOOK AT THIS LOCATION
-                  </a>
                 </div>
               </div>
-            )
-          })}
+
+              <div className="p-8">
+                <p className="text-neutral-600 mb-6 leading-relaxed">{location.description}</p>
+
+                <div className="mb-6">
+                  <h4 className="text-sm font-medium text-[#9fa089] mb-3 flex items-center">
+                    <Scissors className="h-4 w-4 mr-2" />
+                    Services
+                  </h4>
+                  <div className="grid grid-cols-2 gap-2">
+                    {location.services.map((service, serviceIndex) => (
+                      <div key={serviceIndex} className="text-sm text-neutral-600">
+                        • {service}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center text-neutral-600">
+                    <MapPin className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
+                    <span className="text-sm">{location.address}</span>
+                  </div>
+                  <div className="flex items-center text-neutral-600">
+                    <Clock className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
+                    <span className="text-sm">{location.hours}</span>
+                  </div>
+                  <div className="flex items-center text-neutral-600">
+                    <MapPin className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
+                    <span className="text-sm">{location.bookingText}</span>
+                  </div>
+                </div>
+
+                <a
+                  href={location.mapLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-[#9fa089] text-white py-3 px-6 rounded-md hover:bg-[#8a9179] transition-colors duration-300 font-medium text-center"
+                >
+                  BOOK AT THIS LOCATION
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
