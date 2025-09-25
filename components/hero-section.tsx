@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import Image from "next/image" // Importe o componente Image do Next.js
+import Image from "next/image"
 
 export function HeroSection() {
   const scrollToPortfolio = () => {
@@ -12,23 +12,24 @@ export function HeroSection() {
   }
 
   return (
-    <section
-      id="home"
-      className="relative h-screen overflow-hidden bg-black" // Adicionei bg-black para preencher o espaço do object-contain
-    >
-      {/* Imagem de Fundo Otimizada */}
-      <Image
-        src="/murilo.jpg" // Verifique se o caminho da imagem está correto
-        alt="Urban New Concept - Murilo and Rodrigo"
-        fill // 'fill' faz a imagem preencher o contêiner pai
-        className="object-contain object-center" // Alterado para object-contain para mostrar a imagem inteira
-        priority // 'priority' carrega a imagem mais rápido por ser a principal da página
-      />
+    <section id="home" className="relative h-screen bg-black">
+      {/* Camada da Imagem de Fundo (Fundo) */}
+      <div className="absolute inset-0">
+        <Image
+          src="/murilo.jpg" // Verifique se o caminho da imagem está correto
+          alt="Urban New Concept - Murilo and Rodrigo"
+          fill
+          className="object-contain object-center"
+          priority
+        />
+      </div>
 
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-green-800/15 to-stone-800/25" />
+      {/* Camada do Conteúdo (Frente) */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full">
+        {/* Camada do Gradiente (Entre a Imagem e o Conteúdo) */}
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-green-800/15 to-stone-800/25" />
 
-      <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center text-white max-w-4xl px-4">
+        <div className="text-center text-white max-w-4xl px-4 z-20">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-4 tracking-tight leading-tight">
             Fabulous Hair Isn't Just <span className="text-white/40 font-light">Style</span>
           </h1>
@@ -58,7 +59,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-bounce"></div>
         </div>
