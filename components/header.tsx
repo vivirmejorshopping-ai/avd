@@ -34,7 +34,7 @@ export function Header() {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
-return (
+  return (
     <>
       <header
         className={`
@@ -45,14 +45,14 @@ return (
         <div className="mx-auto px-4 py-3 md:px-6 md:py-4 max-w-7xl">
           <div className="flex items-center justify-between">
             <Link href="/" onClick={() => handleNavigation("/")}>
-<h1
-  className={`flex flex-col items-center text-sm md:text-base font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
-    ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
-  `}
->
-  <span className="text-lg md:text-xl">URBAN NEW CONCEPT</span>
-  <span className="text-[0.55rem] md:text-[0.75rem] tracking-wide">By Murillo & Rodrigo</span>
-</h1>
+              <h1
+                className={`text-center transition-colors duration-300 cursor-pointer
+                  ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
+                `}
+              >
+                <span className="text-lg md:text-xl font-normal tracking-[0.2em] uppercase">URBAN NEW CONCEPT</span> <br />
+                <span className="text-xs md:text-sm tracking-wide">By Murillo & Rodrigo</span>
+              </h1>
             </Link>
 
             {/* Container para o botão e o menu (versão móvel) */}
@@ -149,14 +149,14 @@ return (
                   onClick={() => handleNavigation("/services")}
                   className="block text-sage hover:text-sage/80 transition-colors font-medium py-1"
                 >
-                  Services now
+                  Services
                 </Link>
                 <Link
                   href="/price-list"
                   onClick={() => handleNavigation("/price-list")}
                   className="block text-sage hover:text-sage/80 transition-colors font-medium py-1"
                 >
-                  Barbershop Price Liste 
+                  Barbershop Price List
                 </Link>
                 <Link
                   href="/contact"
@@ -176,7 +176,7 @@ return (
                   asChild
                   className="w-full bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-sm uppercase tracking-wide mt-2"
                 >
-                  <a href="https://www.fresha.com/pt/p/msdasd3402928">BOOK HEREs</a>
+                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
                 </Button>
               </div>
             </div>
@@ -198,6 +198,3 @@ return (
     </>
   );
 }
-
-
-
