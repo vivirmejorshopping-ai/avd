@@ -11,7 +11,7 @@ export default function PriceListPage() {
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-2xl mx-auto text-center">
             {/* Title */}
-            <h1 className="text-4xl md:text-6xl font-bold text-neutral-900 mb-12 tracking-tight">
+            <h1 className="text-4xl md:text-6xl font-light text-sage mb-4 tracking-tight">
               Barbershop Price List
             </h1>
 
