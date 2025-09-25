@@ -44,12 +44,9 @@ export function Header() {
       >
         <div className="mx-auto px-4 py-3 md:px-6 md:py-4 max-w-7xl">
           <div className="flex items-center justify-between">
-            {/* Left spacer */}
-            <div className="flex-1"></div>
-
-            {/* Centered Logo */}
+            {/* Logo - Left */}
             <Link href="/" onClick={() => handleNavigation("/")} className="flex-shrink-0">
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-start">
                 <h1
                   className={`text-sm md:text-lg font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
                     ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
@@ -65,8 +62,59 @@ export function Header() {
               </div>
             </Link>
 
-            {/* Right content */}
-            <div className="flex-1 flex justify-end">
+            {/* Navigation - Center */}
+            <div className="flex-1 flex justify-center hidden md:flex">
+              <nav className="flex items-center space-x-8">
+                <Link
+                  href="/"
+                  onClick={() => handleNavigation("/")}
+                  className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
+                    isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                  }`}
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/services"
+                  onClick={() => handleNavigation("/services")}
+                  className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
+                    isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                  }`}
+                >
+                  Services
+                </Link>
+                <Link
+                  href="/price-list"
+                  onClick={() => handleNavigation("/price-list")}
+                  className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
+                    isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                  }`}
+                >
+                  Barbershop Price List
+                </Link>
+                <Link
+                  href="/contact"
+                  onClick={() => handleNavigation("/contact")}
+                  className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
+                    isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                  }`}
+                >
+                  Contact
+                </Link>
+                <Link
+                  href="/about"
+                  onClick={() => handleNavigation("/about")}
+                  className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
+                    isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                  }`}
+                >
+                  About
+                </Link>
+              </nav>
+            </div>
+
+            {/* Right content - Mobile and Button */}
+            <div className="flex items-center space-x-3 md:space-x-0">
               {/* Mobile: Button and hamburger */}
               <div className="flex items-center space-x-3 md:hidden">
                 <Button
@@ -85,56 +133,8 @@ export function Header() {
                 </button>
               </div>
 
-              {/* Desktop: Nav and Button */}
-              <div className="hidden md:flex items-center space-x-8">
-                <nav className="flex items-center space-x-8">
-                  <Link
-                    href="/"
-                    onClick={() => handleNavigation("/")}
-                    className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
-                      isScrolled || !isHomePage ? "text-sage" : "text-white/90"
-                    }`}
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    href="/services"
-                    onClick={() => handleNavigation("/services")}
-                    className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
-                      isScrolled || !isHomePage ? "text-sage" : "text-white/90"
-                    }`}
-                  >
-                    Services
-                  </Link>
-                  <Link
-                    href="/price-list"
-                    onClick={() => handleNavigation("/price-list")}
-                    className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
-                      isScrolled || !isHomePage ? "text-sage" : "text-white/90"
-                    }`}
-                  >
-                    Barbershop Price List
-                  </Link>
-                  <Link
-                    href="/contact"
-                    onClick={() => handleNavigation("/contact")}
-                    className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
-                      isScrolled || !isHomePage ? "text-sage" : "text-white/90"
-                    }`}
-                  >
-                    Contact
-                  </Link>
-                  <Link
-                    href="/about"
-                    onClick={() => handleNavigation("/about")}
-                    className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
-                      isScrolled || !isHomePage ? "text-sage" : "text-white/90"
-                    }`}
-                  >
-                    About
-                  </Link>
-                </nav>
-
+              {/* Desktop Button - Right */}
+              <div className="hidden md:block">
                 <Button
                   asChild
                   variant="outline"
