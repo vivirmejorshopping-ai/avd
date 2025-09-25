@@ -2,26 +2,26 @@ import { MapPin, Phone, Clock, Scissors } from "lucide-react"
 
 const locations = [
   {
-    type: "Hair Salon",
+    type: "Hair Salon - (Future Angels Salon)",
     icon: Scissors,
     address: "53 The Runway, Wigram",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LU6UtYYJ2ixvAqVOwr76MW9sWmhIww.png",
     description: "Our flagship salon offering full hair styling, color treatments, and luxury services",
     services: ["Balayage & Color", "Brazilian Keratin", "Cuts & Styling", "Hair Treatments"],
-    hours: "Tue-Sat: 9AM-6PM",
+    hours: "Mon, Wed, Fri, Sat: 9:30AM-6PM Sun: 10am-5pm",
     bookingText: "Book Online",
     mapLink:
       "https://www.google.com/maps/dir/-43.560516,172.654929/Urban+New+Concept,+Curletts+Road,+Sockburn,+Christchurch/@-43.5486578,172.5291973,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x6d31f5c6d1b1a951:0x107b95d6e290b5fc!2m2!1d172.5679479!2d-43.537482!3e0?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D",
   },
   {
-    type: "Barbershop",
+    type: "Barbershop - (Close to Moorhouse Ave)",
     icon: Scissors,
     address: "456 Colombo St / Sydenham",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Gxv9OQiYchIvj8kXdMGtgHwEl6qBmU.png",
     description: "Professional barbering services with a modern touch for the discerning gentleman",
-    services: ["Classic Cuts", "Hot Towel Shaves", "Beard Styling", "Hair Washing"],
+    services: ["Classic Cuts", "Beard Trim", "Fade Cut", "Kids Cut","Women's Dry Cut"],
     hours: "Mon-Sat: 9AM-7PM",
-    bookingText: "Book Online",
+    bookingText: "Just Walk in",
     mapLink:
       "https://www.google.com/maps/dir//Urban+New+Concept+-+Barbershop+456+Colombo+Street,+Sydenham,+Christchurch+8023/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x6d318ba564845c0b:0x333ca5b65dfda6ee?sa=X&ved=1t:57443&ictx=111",
   },
@@ -87,11 +87,10 @@ export function LocationsSection() {
                     <Clock className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
                     <span className="text-sm">{location.hours}</span>
                   </div>
-                  <div className="flex items-center text-neutral-600">
-                    <Phone className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
-                    <span className="text-sm">{location.bookingText}</span>
-                  </div>
-                </div>
+                 <div className="flex items-center text-neutral-600">
+                <span className="text-xl mr-3 flex-shrink-0">🚶‍♂️</span>
+                <span className="text-sm">{location.bookingText}</span>
+                 </div>
 
                 <a
                   href={location.mapLink}
