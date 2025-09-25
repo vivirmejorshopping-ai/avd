@@ -69,11 +69,13 @@ export function PortfolioSection() {
           {portfolioItems.map((item, index) => (
             <div key={index} className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={item.image || "/placeholder.svg?height=400&width=400"}
+                <div className="relative overflow-hidden aspect-[4/5]"> {/* Adicionado aspect-ratio para proporção consistente */}
+                  <Image
+                    src={item.image}
                     alt={`${item.title} ${item.subtitle}`}
-                    className="w-full h-[28rem] object-cover object-center transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+                    width={500} // Defina uma largura e altura base
+                    height={625} // Use uma proporção para evitar distorções (4:5)
+                    className="w-full h-full object-cover object-center transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
@@ -82,7 +84,6 @@ export function PortfolioSection() {
                     {item.title}
                   </h3>
                   <h4 className="text-md font-light text-[#9fa089] mb-2">{item.subtitle}</h4>
-                  <p className="text-sm text-neutral-600 leading-relaxed">{item.description}</p>
                 </div>
               </div>
             </div>
@@ -90,5 +91,5 @@ export function PortfolioSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
