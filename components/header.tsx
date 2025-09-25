@@ -58,7 +58,7 @@ export function Header() {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`p-1 transition-colors duration-300 ${
+                className={`p-2 transition-colors duration-300 ${
                   isScrolled || !isHomePage ? "text-sage" : "text-white/90"
                 }`}
               >
