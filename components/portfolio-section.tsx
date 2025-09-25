@@ -46,21 +46,21 @@ export function PortfolioSection() {
               href="https://www.instagram.com/urbannewconcept/"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
             >
-              <Instagram className="h-5 w-5" />
+              <Instagram className="h-4 w-4" />
               <span className="text-sm">@urbannewconcept</span>
             </a>
             <a
               href="https://www.facebook.com/UrbanNewConcept-107779774577826"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
             >
-              <Facebook className="h-5 w-5" />
+              <Facebook className="h-4 w-4" />
               <span className="text-sm">Facebook</span>
             </a>
             <a
               href="https://api.whatsapp.com/message/NH3I4F3R7LLIJ1?autoload=1&app_absent=0"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
             >
-              <MessageCircle className="h-5" />
+              <MessageCircle className="h-4" />
               <span className="text-sm">WhatsApp</span>
             </a>
           </div>
