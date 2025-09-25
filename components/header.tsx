@@ -23,7 +23,7 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const handleNavigation = (href: string) => {
+  const handleNavigation = (href) => {
     setIsMobileMenuOpen(false)
     if (href === "/" && window.location.pathname === "/") {
       window.scrollTo({ top: 0, behavior: "smooth" })
@@ -34,7 +34,7 @@ export function Header() {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
-return (
+  return (
     <>
       <header
         className={`
@@ -44,22 +44,29 @@ return (
       >
         <div className="mx-auto px-4 py-3 md:px-6 md:py-4 max-w-7xl">
           <div className="flex items-center justify-between">
-            <Link href="/" onClick={() => handleNavigation("/")}>
-              <h1
-                className={`text-xs md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
+            {/* Logo do Salão e By Murillo & Rodrigo */}
+            <Link href="/" onClick={() => handleNavigation("/")} className="min-w-0 flex-shrink-0">
+              <div className="flex flex-col">
+                <h1
+                  className={`text-sm md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
+                    ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
+                  `}
+                >
+                  URBAN NEW CONCEPT
+                </h1>
+                <span className={`text-[0.65em] md:text-[0.8em] font-light
                   ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
-                `}
-              >
-                URBAN NEW CONCEPT <br />
-                <span className="text-[0.7em] md:text-[0.8em]">By Murillo & Rodrigo</span>
-              </h1>
+                `}>
+                  By Murillo & Rodrigo
+                </span>
+              </div>
             </Link>
 
             {/* Container para o botão e o menu (versão móvel) */}
-            <div className="flex items-center space-x-3 md:hidden">
+            <div className="flex items-center space-x-2 md:hidden">
               <Button
                 asChild
-                className="bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
+                className="bg-sage hover:bg-sage/90 text-white px-3 py-1 text-xs font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
               >
                 <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">Online Booking</a>
               </Button>
@@ -198,6 +205,3 @@ return (
     </>
   );
 }
-
-
-
