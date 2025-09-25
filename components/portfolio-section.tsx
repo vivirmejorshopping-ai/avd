@@ -4,40 +4,34 @@ const portfolioItems = [
   {
     title: "Balayage + Brazilian Keratin Blowout",
     subtitle: "Light Brown",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-on59P1SJkW5toZQW4rGQTgsEMzioao.png",
-    description: "Luxurious light brown balayage with Brazilian keratin treatment for silky finish",
+    image: "/images/1.jpg",
   },
   {
     title: "Balayage",
     subtitle: "Creamy Blonde",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-olLqW0tN3k9VUVq9xPXHOLZbRz3H7U.png",
-    description: "Soft creamy blonde balayage with natural dimension",
+    image: "/images/creamy-blonde-balayage-hair-styling.jpg",
   },
   {
     title: "Balayage",
     subtitle: "Light Caramel",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0cfHdheGzRP16TQpb9xj0veMiS3U7p.png",
-    description: "Rich caramel highlights for a sun-kissed look",
+    image: "/images/light-caramel-balayage-hair-color.jpg",
   },
   {
     title: "Balayage",
     subtitle: "Coffee Brown",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VRLMmxDPQZRghKq6JAuPkl7qIfLEPO.png",
-    description: "Deep coffee brown with subtle balayage accents",
+    image: "/images/coffee-brown-balayage-hair-transformation.jpg",
   },
   {
     title: "Balayage",
     subtitle: "Pearl Blonde",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DKc7C10BC7VWFU8m9jO9JFUyGVr3ZG.png",
-    description: "Luxurious pearl blonde highlights with natural dimension",
+    image: "/images/beautiful-pearl-blonde-balayage-hair-transformation.jpg",
   },
   {
     title: "Balayage",
     subtitle: "Lux Blonde",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PgtBTczdKW3io7cqCxPePVRFRQSbA8.png",
-    description: "Premium blonde balayage for sophisticated elegance",
+    image: "/images/luxurious-blonde-balayage-hair-color.jpg",
   },
-]
+];
 
 export function PortfolioSection() {
   return (
