@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image" // Importe o componente Image do Next.js
 
 export function HeroSection() {
   const scrollToPortfolio = () => {
@@ -13,9 +14,17 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/murilo.jpg')" }}
+      className="relative h-screen overflow-hidden" // O overflow-hidden é importante para o Image fill
     >
+      {/* Imagem de Fundo Otimizada */}
+      <Image
+        src="/murilo.jpg" // Verifique se o caminho da imagem está correto
+        alt="Urban New Concept - Murilo and Rodrigo"
+        fill // 'fill' faz a imagem preencher o contêiner pai
+        className="object-cover object-center object-position-top" // object-position-top evita que os rostos sejam cortados
+        priority // 'priority' carrega a imagem mais rápido por ser a principal da página
+      />
+
       <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-green-800/15 to-stone-800/25" />
 
       <div className="relative z-10 flex items-center justify-center h-full">
