@@ -2,34 +2,34 @@ import { Instagram, Facebook, MessageCircle } from "lucide-react"
 
 const portfolioItems = [
   {
-    title: "Balayage + Brazilian Keratin Blowout",
-    subtitle: "Light Brown",
+    title: "Medium Brown",
+    subtitle: "Toner",
     image: "/images/1.jpg",
   },
   {
-    title: "Balayage",
-    subtitle: "Creamy Blonde",
-    image: "/images/creamy-blonde-balayage-hair-styling.jpg",
+    title: "Medium Blonde",
+    subtitle: "Balayage",
+    image: "/images/2.jpg",
   },
   {
-    title: "Balayage",
-    subtitle: "Light Caramel",
-    image: "/images/light-caramel-balayage-hair-color.jpg",
+    title: "Light Brown",
+    subtitle: "Balayage",
+    image: "/images/3.jpg",
   },
   {
-    title: "Balayage",
-    subtitle: "Coffee Brown",
-    image: "/images/coffee-brown-balayage-hair-transformation.jpg",
+    title: "Soft Caramel",
+    subtitle: "Balayage",
+    image: "/images/4.jpg",
   },
   {
-    title: "Balayage",
-    subtitle: "Pearl Blonde",
-    image: "/images/beautiful-pearl-blonde-balayage-hair-transformation.jpg",
+    title: "Medium Brown",
+    subtitle: "Balayage",
+    image: "/images/5.jpg",
   },
   {
-    title: "Balayage",
-    subtitle: "Lux Blonde",
-    image: "/images/luxurious-blonde-balayage-hair-color.jpg",
+    title: "Soft Ash",
+    subtitle: "Balayage",
+    image: "/images/6.jpg",
   },
 ];
 
