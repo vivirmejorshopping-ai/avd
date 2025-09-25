@@ -21,7 +21,7 @@ export function HeroSection() {
         src="/images/hero-team.jpg"
         alt="Urban New Concept Team - Murillo and Rodrigo"
         fill
-        className="object-cover object-top"
+        className="object-cover object-center"
         priority
       />
 
