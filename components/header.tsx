@@ -44,23 +44,25 @@ export function Header() {
       >
         <div className="mx-auto px-4 py-3 md:px-6 md:py-4 max-w-7xl">
           <div className="flex items-center justify-between">
-            {/* Logo do Salão e By Murillo & Rodrigo */}
-            <Link href="/" onClick={() => handleNavigation("/")} className="min-w-0 flex-shrink-0">
-              <div className="flex flex-col">
-                <h1
-                  className={`text-sm md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
+            {/* Logo do Salão e By Murillo & Rodrigo (centralizado em mobile) */}
+            <div className="flex items-center flex-1 md:flex-none">
+              <Link href="/" onClick={() => handleNavigation("/")} className="min-w-0 flex-shrink-0">
+                <div className="flex flex-col text-center md:text-left">
+                  <h1
+                    className={`text-sm md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
+                      ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
+                    `}
+                  >
+                    URBAN NEW CONCEPT
+                  </h1>
+                  <span className={`text-[0.65em] md:text-[0.8em] font-light
                     ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
-                  `}
-                >
-                  URBAN NEW CONCEPT
-                </h1>
-                <span className={`text-[0.65em] md:text-[0.8em] font-light
-                  ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
-                `}>
-                  By Murillo & Rodrigo
-                </span>
-              </div>
-            </Link>
+                  `}>
+                    By Murillo & Rodrigo
+                  </span>
+                </div>
+              </Link>
+            </div>
 
             {/* Container para o botão e o menu (versão móvel) */}
             <div className="flex items-center space-x-2 md:hidden">
@@ -80,6 +82,7 @@ export function Header() {
               </button>
             </div>
 
+            {/* Menu de navegação para desktop */}
             <nav className="hidden md:flex items-center space-x-8">
               <Link
                 href="/"
