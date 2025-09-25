@@ -114,17 +114,17 @@ export function Header() {
               </Link>
             </nav>
 
-            <div className="hidden md:block">
-              <Button
-                asChild
-                variant="outline"
-                className={`book-button border-white/30 text-white hover:bg-white hover:text-black px-6 py-2 text-xs font-normal rounded-sm bg-transparent uppercase tracking-wide transition-all duration-300 ${
-                  isScrolled || !isHomePage ? "border-sage text-sage hover:bg-sage hover:text-white" : ""
-                }`}
-              >
-                <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
-              </Button>
-            </div>
+<div className="fixed top-6 right-6 z-50 hidden md:block">
+  <Button
+    asChild
+    variant="outline"
+    className={`book-button border-white/30 text-white hover:bg-white hover:text-black px-6 py-2 text-xs font-normal rounded-sm bg-transparent uppercase tracking-wide transition-all duration-300 ${
+      isScrolled || !isHomePage ? "border-sage text-sage hover:bg-sage hover:text-white" : ""
+    }`}
+  >
+    <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
+  </Button>
+</div>
           </div>
 
           {isMobileMenuOpen && (

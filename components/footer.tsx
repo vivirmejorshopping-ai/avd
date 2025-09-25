@@ -35,7 +35,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#portfolio" className="hover:text-sage transition-colors">
+                <a href="/price-list" className="hover:text-sage transition-colors">
                   Price List
                 </a>
               </li>
@@ -45,7 +45,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#reviews" className="hover:text-sage transition-colors">
+                <a href="/contact" className="hover:text-sage transition-colors">
                   Contact
                 </a>
               </li>
