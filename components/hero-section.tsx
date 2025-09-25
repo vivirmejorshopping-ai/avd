@@ -41,8 +41,7 @@ export function HeroSection() {
       <div className="relative z-20 flex flex-col items-center justify-center h-full">
         <div className="text-center text-white max-w-4xl px-4">
           <h1 className="text-3xl md:text-6xl lg:text-7xl font-light mb-2 tracking-tight leading-tight">
-            Fabulous Hair Isn't Just{" "}
-            <span className="text-white/40 font-light">Style</span>
+            Fabulous Hair Isn't Just Style{" "}
           </h1>
 
           <p className="text-base md:text-xl font-light mb-8 opacity-80 tracking-wide">
