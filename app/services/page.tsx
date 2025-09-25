@@ -140,10 +140,6 @@ export default function ServicesPage() {
   </span>
   <span className="font-semibold text-sage whitespace-nowrap">$199 - $350</span>
 </div>
-                  <p className="text-xs text-neutral-500 italic mb-2">
-                    (SUPER STRONG FRIZZ & VOLUME REDUCER) (LASTS FOR ABOUT 2-3 MONTHS)
-                  </p>
-
                   <div className="flex justify-between items-start border-b border-neutral-100 pb-2">
                     <span className="flex-1 pr-4 text-neutral-700">BRAZILIAN KERATIN BLOWOUT (Frontal Area):</span>
                     <span className="font-semibold text-sage whitespace-nowrap">$80 - $100</span>
@@ -163,9 +159,7 @@ export default function ServicesPage() {
   </span>
   <span className="font-semibold text-sage whitespace-nowrap">$50</span>
 </div>
-                  <p className="text-xs text-neutral-500 italic">($30 WHEN YOU DO ANY OTHER SERVICE)</p>
-
-                  <div className="flex justify-between items-start border-b border-neutral-100 pb-2">
+                 <div className="flex justify-between items-start border-b border-neutral-100 pb-2">
                     <span className="flex-1 pr-4 text-neutral-700">SIMPLE HAIR TREATMENT:</span>
                     <span className="font-semibold text-sage whitespace-nowrap">$10</span>
                   </div>
