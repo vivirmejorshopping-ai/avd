@@ -38,7 +38,7 @@ export function Header() {
     <>
       <header
         className={`
-          fixed top-0 left-0 right-0 z-50 transition-all duration-300 
+          fixed top-0 left-0 right-0 z-50 transition-all duration-300
           ${isScrolled || !isHomePage ? "header-scrolled" : "bg-transparent"}
         `}
       >
@@ -46,12 +46,12 @@ export function Header() {
           <div className="flex items-center justify-between">
             <Link href="/" onClick={() => handleNavigation("/")}>
               <h1
-                className={`text-xs md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer 
+                className={`text-xs md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
                   ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
                 `}
               >
                 URBAN NEW CONCEPT <br />
-              <span className="text-[0.7em] md:text-[0.8em]">By Murillo & Rodrigo</span>
+                <span className="text-[0.7em] md:text-[0.8em]">By Murillo & Rodrigo</span>
               </h1>
             </Link>
 
@@ -114,17 +114,17 @@ export function Header() {
               </Link>
             </nav>
 
-<div className="fixed top-6 right-6 z-50 hidden md:block">
-  <Button
-    asChild
-    variant="outline"
-    className={`book-button border-white/30 text-white hover:bg-white hover:text-black px-6 py-2 text-xs font-normal rounded-sm bg-transparent uppercase tracking-wide transition-all duration-300 ${
-      isScrolled || !isHomePage ? "border-sage text-sage hover:bg-sage hover:text-white" : ""
-    }`}
-  >
-    <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
-  </Button>
-</div>
+            <div className="fixed top-6 right-6 z-50 hidden md:block">
+              <Button
+                asChild
+                variant="outline"
+                className={`book-button border-white/30 text-white hover:bg-white hover:text-black px-6 py-2 text-xs font-normal rounded-sm bg-transparent uppercase tracking-wide transition-all duration-300 ${
+                  isScrolled || !isHomePage ? "border-sage text-sage hover:bg-sage hover:text-white" : ""
+                }`}
+              >
+                <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
+              </Button>
+            </div>
           </div>
 
           {isMobileMenuOpen && (
@@ -177,6 +177,15 @@ export function Header() {
         </div>
       </header>
 
+      <div className="fixed top-6 right-6 z-50 md:hidden">
+        <Button
+          asChild
+          className="bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
+        >
+          <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK</a>
+        </Button>
+      </div>
+
       {showToTop && (
         <button
           onClick={scrollToTop}
@@ -189,5 +198,11 @@ export function Header() {
         </button>
       )}
     </>
-  )
+  );
 }
+
+
+
+
+
+
