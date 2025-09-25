@@ -87,10 +87,11 @@ export function LocationsSection() {
                     <Clock className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
                     <span className="text-sm">{location.hours}</span>
                   </div>
-                 <div className="flex items-center text-neutral-600">
-                <span className="text-xl mr-3 flex-shrink-0">🚶‍♂️</span>
-                <span className="text-sm">{location.bookingText}</span>
-                 </div>
+                  <div className="flex items-center text-neutral-600">
+                    <Phone className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
+                    <span className="text-sm">{location.bookingText}</span>
+                  </div>
+                </div>
 
                 <a
                   href={location.mapLink}
