@@ -45,14 +45,14 @@ return (
         <div className="mx-auto px-4 py-3 md:px-6 md:py-4 max-w-7xl">
           <div className="flex items-center justify-between">
             <Link href="/" onClick={() => handleNavigation("/")}>
-              <h1
-                className={`text-xs md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
-                  ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
-                `}
-              >
-                URBAN NEW CONCEPT <br />
-                <span className="text-[0.7em] md:text-[0.8em]">By Murillo & Rodrigo</span>
-              </h1>
+<h1
+  className={`flex flex-col items-center text-sm md:text-base font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
+    ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
+  `}
+>
+  <span className="text-lg md:text-xl">URBAN NEW CONCEPT</span>
+  <span className="text-[0.55rem] md:text-[0.75rem] tracking-wide">By Murillo & Rodrigo</span>
+</h1>
             </Link>
 
             {/* Container para o botão e o menu (versão móvel) */}

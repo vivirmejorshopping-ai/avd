@@ -39,15 +39,14 @@ export function HeroSection() {
             it's confidence you wear every day
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button
-              asChild
-              className="bg-sage hover:bg-sage/90 text-white px-8 py-3 text-sm font-normal rounded-sm uppercase tracking-wide"
-            >
-              <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">
-                BOOK YOUR APPOINTMENT asgora →
-              </a>
-            </Button>
+<div className="flex justify-center mt-8">
+  <Button
+    asChild
+    className="bg-sage hover:bg-sage/90 text-white px-8 py-4 text-lg md:text-xl font-medium rounded-full shadow-lg uppercase tracking-wide transition-transform duration-300 transform hover:scale-105"
+  >
+    <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK YOUR APPOINTMENT</a>
+  </Button>
+</div>
 
             <Button
               onClick={scrollToPortfolio}
