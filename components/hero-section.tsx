@@ -45,7 +45,7 @@ export function HeroSection() {
               className="bg-sage hover:bg-sage/90 text-white px-8 py-3 text-sm font-normal rounded-sm uppercase tracking-wide"
             >
               <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">
-                BOOK YOUR APPOINTMENT →
+                BOOK YOUR APPOINTMENT asgora →
               </a>s
             </Button>
 
