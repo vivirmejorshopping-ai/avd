@@ -79,7 +79,7 @@ export default function PriceListPage() {
 
             {/* Additional Info */}
             <div className="mt-8 text-center">
-              <p className="text-neutral-600 text-sm">Walk-ins welcome • Appointments recommended</p>
+              <p className="text-neutral-600 text-sm">Walk-ins welcome • No Appointment Needed</p>
             </div>
           </div>
         </div>

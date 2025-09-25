@@ -53,13 +53,15 @@ export default function ContactPage() {
 
                     <div className="space-y-8">
                       <div className="text-center">
-                        <h3 className="font-semibold text-gray-900 mb-3 text-lg">Hair Salon - (Future Angels Salon)</h3>
+                        <h3 className="font-semibold text-gray-900 mb-3 text-lg">Hair Salon</h3>
+                        <h3 className="font-semibold text-gray-900 mb-3 text-lg">(Future Angels Salon)</h3>
                         <p className="text-gray-600 leading-relaxed">53 The Runway</p>
                         <p className="text-gray-600 leading-relaxed">Wigram, Christchurch, NZ</p>
                       </div>
 
                       <div className="text-center">
-                        <h3 className="font-semibold text-gray-900 mb-3 text-lg">Barbershop - (Close to Moorhouse Ave)</h3>
+                        <h3 className="font-semibold text-gray-900 mb-3 text-lg">Barbershop</h3>
+                        <h3 className="font-semibold text-gray-900 mb-3 text-lg">(Close to Moorhouse Ave)</h3>
                         <p className="text-gray-600 leading-relaxed">456 Colombo Street</p>
                         <p className="text-gray-600 leading-relaxed">Sydenham, Christchurch, NZ</p>
                       </div>
