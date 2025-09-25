@@ -14,22 +14,23 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative h-screen overflow-hidden"
+      className="relative h-screen overflow-hidden bg-black" // Fundo preto para as barras laterais
     >
-      {/* Camada da Imagem de Fundo */}
+      {/* Camada da Imagem de Fundo (Fundo) */}
       <div className="absolute inset-0">
         <Image
-          src="/images/murilo.jpg" // Caminho corrigido para public/images/murilo.jpg
+          src="/images/murilo.jpg" 
           alt="Urban New Concept - Murilo and Rodrigo"
           fill
-          className="object-cover object-center"
+          className="object-contain object-center" // Garante que a foto inteira apareça
           priority
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-green-800/15 to-stone-800/25" />
+      {/* Camada do Gradiente e Conteúdo */}
+      <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-green-800/15 to-stone-800/25 z-10" />
 
-      <div className="relative z-10 flex items-center justify-center h-full">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full">
         <div className="text-center text-white max-w-4xl px-4">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-4 tracking-tight leading-tight">
             Fabulous Hair Isn't Just <span className="text-white/40 font-light">Style</span>
@@ -60,7 +61,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-bounce"></div>
         </div>
