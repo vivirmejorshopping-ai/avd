@@ -44,10 +44,10 @@ export function Header() {
       >
         <div className="mx-auto px-4 py-3 md:px-6 md:py-4 max-w-7xl">
           <div className="flex items-center justify-between">
-            {/* Logo do Salão e By Murillo & Rodrigo (alinhados à esquerda) */}
+            {/* Logo e "By Murillo & Rodrigo" alinhados à esquerda */}
             <div className="flex-1 flex justify-start">
               <Link href="/" onClick={() => handleNavigation("/")} className="min-w-0 flex-shrink-0">
-                <div className="flex flex-col items-center md:items-start">
+                <div className="flex flex-col items-start">
                   <h1
                     className={`text-sm md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
                       ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
@@ -64,7 +64,7 @@ export function Header() {
               </Link>
             </div>
 
-            {/* Container para o menu e o botão (versão móvel) */}
+            {/* Container para o botão e o menu (versão móvel) */}
             <div className="flex items-center space-x-2 md:hidden">
               <Button
                 asChild
@@ -74,7 +74,9 @@ export function Header() {
               </Button>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`p-2 transition-colors duration-300 ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}`}
+                className={`p-2 transition-colors duration-300 ${
+                  isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                }`}
               >
                 {isMobileMenuOpen ? "✕" : "☰"}
               </button>
