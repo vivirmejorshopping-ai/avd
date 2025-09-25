@@ -55,14 +55,13 @@ return (
               </h1>
             </Link>
 
-            {/* Este é o novo contêiner para a versão móvel */}
-            <div className="flex items-center md:hidden">
-              {/* Adicionando o botão de agendamento fixo aqui */}
+            {/* Container para o botão e o menu (versão móvel) */}
+            <div className="flex items-center space-x-3 md:hidden">
               <Button
                 asChild
                 className="bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
               >
-                <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK</a>
+                <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">Online Booking</a>
               </Button>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -199,8 +198,6 @@ return (
     </>
   );
 }
-
-
 
 
 
