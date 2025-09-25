@@ -23,7 +23,7 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const handleNavigation = (href) => {
+  const handleNavigation = (href: string) => {
     setIsMobileMenuOpen(false)
     if (href === "/" && window.location.pathname === "/") {
       window.scrollTo({ top: 0, behavior: "smooth" })
@@ -44,93 +44,110 @@ export function Header() {
       >
         <div className="mx-auto px-4 py-3 md:px-6 md:py-4 max-w-7xl">
           <div className="flex items-center justify-between">
-            {/* Logo do Salão e By Murillo & Rodrigo (alinhados ao centro) */}
-            <div className="flex-1 flex justify-center md:justify-start">
-              <Link href="/" onClick={() => handleNavigation("/")} className="min-w-0 flex-shrink-0">
-                <div className="flex flex-col items-center">
-                  <h1
-                    className={`text-sm md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
-                      ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
-                    `}
-                  >
-                    URBAN NEW CONCEPT
-                  </h1>
-                  <span className={`text-[0.65em] md:text-[0.8em] font-light
+            {/* Left spacer */}
+            <div className="flex-1"></div>
+
+            {/* Centered Logo */}
+            <Link href="/" onClick={() => handleNavigation("/")} className="flex-shrink-0">
+              <div className="flex flex-col items-center">
+                <h1
+                  className={`text-sm md:text-lg font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
                     ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
-                  `}>
-                    By Murillo & Rodrigo
-                  </span>
-                </div>
-              </Link>
-            </div>
+                  `}
+                >
+                  URBAN NEW CONCEPT
+                </h1>
+                <span className={`text-xs md:text-sm font-light
+                  ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
+                `}>
+                  By Murillo & Rodrigo
+                </span>
+              </div>
+            </Link>
 
-            {/* Container para o botão e o menu (versão móvel) */}
-            <div className="flex items-center space-x-2 md:hidden">
-              <Button
-                asChild
-                className="bg-sage hover:bg-sage/90 text-white px-3 py-1 text-xs font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
-              >
-                <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">Online Booking</a>
-              </Button>
-              <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`p-2 transition-colors duration-300 ${
-                  isScrolled || !isHomePage ? "text-sage" : "text-white/90"
-                }`}
-              >
-                {isMobileMenuOpen ? "✕" : "☰"}
-              </button>
-            </div>
+            {/* Right content */}
+            <div className="flex-1 flex justify-end">
+              {/* Mobile: Button and hamburger */}
+              <div className="flex items-center space-x-3 md:hidden">
+                <Button
+                  asChild
+                  className="bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
+                >
+                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">Online Booking</a>
+                </Button>
+                <button
+                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                  className={`p-2 transition-colors duration-300 ${
+                    isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                  }`}
+                >
+                  {isMobileMenuOpen ? "✕" : "☰"}
+                </button>
+              </div>
 
-{/* Menu de navegação para desktop */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link
-                href="/"
-                onClick={() => handleNavigation("/")}
-                className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}`}
-              >
-                Home
-              </Link>
-              <Link
-                href="/services"
-                onClick={() => handleNavigation("/services")}
-                className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}`}
-              >
-                Services
-              </Link>
-              <Link
-                href="/price-list"
-                onClick={() => handleNavigation("/price-list")}
-                className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}`}
-              >
-                Barbershop Price List
-              </Link>
-              <Link
-                href="/contact"
-                onClick={() => handleNavigation("/contact")}
-                className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}`}
-              >
-                Contact
-              </Link>
-              <Link
-                href="/about"
-                onClick={() => handleNavigation("/about")}
-                className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}`}
-              >
-                About
-              </Link>
-            </nav>
+              {/* Desktop: Nav and Button */}
+              <div className="hidden md:flex items-center space-x-8">
+                <nav className="flex items-center space-x-8">
+                  <Link
+                    href="/"
+                    onClick={() => handleNavigation("/")}
+                    className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
+                      isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                    }`}
+                  >
+                    Home
+                  </Link>
+                  <Link
+                    href="/services"
+                    onClick={() => handleNavigation("/services")}
+                    className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
+                      isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                    }`}
+                  >
+                    Services
+                  </Link>
+                  <Link
+                    href="/price-list"
+                    onClick={() => handleNavigation("/price-list")}
+                    className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
+                      isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                    }`}
+                  >
+                    Barbershop Price List
+                  </Link>
+                  <Link
+                    href="/contact"
+                    onClick={() => handleNavigation("/contact")}
+                    className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
+                      isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                    }`}
+                  >
+                    Contact
+                  </Link>
+                  <Link
+                    href="/about"
+                    onClick={() => handleNavigation("/about")}
+                    className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
+                      isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+                    }`}
+                  >
+                    About
+                  </Link>
+                </nav>
+
+                <Button
+                  asChild
+                  variant="outline"
+                  className={`book-button border-white/30 text-white hover:bg-white hover:text-black px-6 py-2 text-xs font-normal rounded-sm bg-transparent uppercase tracking-wide transition-all duration-300 ${
+                    isScrolled || !isHomePage ? "border-sage text-sage hover:bg-sage hover:text-white" : ""
+                  }`}
+                >
+                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
+                </Button>
+              </div>
+            </div>
           </div>
 
-          <div className="fixed top-6 right-6 z-50 hidden md:block">
-            <Button
-              asChild
-              variant="outline"
-              className={`book-button border-white/30 text-white hover:bg-white hover:text-black px-6 py-2 text-xs font-normal rounded-sm bg-transparent uppercase tracking-wide transition-all duration-300 ${isScrolled || !isHomePage ? "border-sage text-sage hover:bg-sage hover:text-white" : ""}`}
-            >
-              <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
-            </Button>
-          </div>
 
           {isMobileMenuOpen && (
             <div className="md:hidden mt-3 bg-white/95 backdrop-blur-lg rounded-lg shadow-lg border border-sage/20">
@@ -147,14 +164,14 @@ export function Header() {
                   onClick={() => handleNavigation("/services")}
                   className="block text-sage hover:text-sage/80 transition-colors font-medium py-1"
                 >
-                  Services now
+                  Services
                 </Link>
                 <Link
                   href="/price-list"
                   onClick={() => handleNavigation("/price-list")}
                   className="block text-sage hover:text-sage/80 transition-colors font-medium py-1"
                 >
-                  Barbershop Price Liste 
+                  Barbershop Price List
                 </Link>
                 <Link
                   href="/contact"
@@ -174,7 +191,7 @@ export function Header() {
                   asChild
                   className="w-full bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-sm uppercase tracking-wide mt-2"
                 >
-                  <a href="https://www.fresha.com/pt/p/msdasd3402928">BOOK HEREs</a>
+                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
                 </Button>
               </div>
             </div>
