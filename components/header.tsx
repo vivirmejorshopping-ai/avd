@@ -46,7 +46,7 @@ export function Header() {
           <div className="flex items-center justify-between">
             <Link href="/" onClick={() => handleNavigation("/")}>
               <h1
-                className={`text-center transition-colors duration-300 cursor-pointer
+                className={`flex flex-col items-center text-center transition-colors duration-300 cursor-pointer
                   ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
                 `}
               >
