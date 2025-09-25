@@ -14,20 +14,17 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative h-screen overflow-hidden bg-black" // Fundo preto para as barras laterais
+      className="relative h-screen overflow-hidden"
     >
-      {/* Camada da Imagem de Fundo (Fundo) */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0 aspect-[3/4] md:aspect-auto" style={{ width: '100%', height: '100%' }}>
         <Image
-          src="/images/murilo.jpg" 
+          src="/images/murilo.jpg"
           alt="Urban New Concept - Murilo and Rodrigo"
           fill
-          className="object-contain object-center" // Garante que a foto inteira apareça
+          className="object-cover object-position-center"
           priority
         />
       </div>
-
-      {/* Camada do Gradiente e Conteúdo */}
       <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-green-800/15 to-stone-800/25 z-10" />
 
       <div className="relative z-20 flex flex-col items-center justify-center h-full">
