@@ -35,18 +35,23 @@ export function Header() {
   }
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
-      <div className="mx-auto px-4 py-3 md:px-6 md:py-4 max-w-7xl">
-        <div className="flex items-center justify-between">
-          <Link href="/" onClick={() => handleNavigation("/")}>
-            <h1
-              className={`text-xs md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer 
-                ${isScrolled || !isHomePage ? "text-[#9fa089]" : "text-white/90"}
-              `}
-            >
-              URBAN NEW CONCEPT <br />
-              By Murillo & Rodrigo
-            </h1>
+    <>
+      <header
+        className={`
+          fixed top-0 left-0 right-0 z-50 transition-all duration-300 
+          ${isScrolled || !isHomePage ? "header-scrolled" : "bg-transparent"}
+        `}
+      >
+        <div className="mx-auto px-4 py-3 md:px-6 md:py-4 max-w-7xl">
+          <div className="flex items-center justify-between">
+            <Link href="/" onClick={() => handleNavigation("/")}>
+              <h1
+                className={`text-xs md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer 
+                  ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
+                `}
+              >
+                URBAN NEW CONCEPT
+              </h1>
             </Link>
 
             <div className="md:hidden">
