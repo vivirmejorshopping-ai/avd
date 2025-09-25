@@ -126,12 +126,12 @@ export function Header() {
                 >
                   {isMobileMenuOpen ? "✕" : "☰"}
                 </button>
-                <Button
-                  asChild
-                  className="bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
-                >
-                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">Online Booking</a>
-                </Button>
+<Button
+    asChild
+    className="bg-sage hover:bg-sage/90 text-white px-3 py-1.5 text-sm font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
+>
+    <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK NOW</a>
+</Button>
               </div>
 
               {/* Desktop Button - Right */}
@@ -188,12 +188,14 @@ export function Header() {
                 >
                   About
                 </Link>
-<Button
-    asChild
-    className="bg-sage hover:bg-sage/90 text-white px-3 py-1.5 text-sm font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
->
-    <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK NOW</a>
-</Button>
+                <Button
+                  asChild
+                  className="bg-transparent border border-white/30 hover:bg-white hover:text-black text-white px-8 py-3 text-sm font-normal rounded-sm uppercase tracking-wide transition-colors duration-300"
+                >
+                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">
+                    BOOK HERE
+                  </a>
+                </Button>
               </div>
             </div>
           )}
