@@ -176,7 +176,7 @@ return (
                   asChild
                   className="w-full bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-sm uppercase tracking-wide mt-2"
                 >
-                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
+                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HEREs</a>
                 </Button>
               </div>
             </div>
