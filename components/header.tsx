@@ -50,7 +50,8 @@ export function Header() {
                   ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
                 `}
               >
-                URBAN NEW CONCEPT
+                URBAN NEW CONCEPT 
+                               By Murillo & Rodrigo
               </h1>
             </Link>
 
