@@ -30,7 +30,7 @@ export function Footer() {
             <h4 className="font-medium text-sage mb-4">Quick Links</h4>
             <ul className="space-y-2 text-neutral-600">
               <li>
-                <a href="#portfolio" className="hover:text-sage transition-colors">
+                <a href="/services" className="hover:text-sage transition-colors">
                   Services
                 </a>
               </li>
