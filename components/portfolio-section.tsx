@@ -2,42 +2,42 @@ import { Instagram, Facebook, MessageCircle } from "lucide-react"
 
 const portfolioItems = [
   {
-    image: "https://images.unsplash.com/photo-1627916538057-3f3f5087612d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "The Classic Fade",
-    subtitle: "Modern Barbershop",
-    description: "A clean and sharp fade with a perfectly blended transition. Timeless style for the modern gentleman."
+    title: "Balayage + Brazilian Keratin Blowout",
+    subtitle: "Light Brown",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-on59P1SJkW5toZQW4rGQTgsEMzioao.png",
+    description: "Luxurious light brown balayage with Brazilian keratin treatment for silky finish",
   },
   {
-    image: "https://images.unsplash.com/photo-1627916538057-3f3f5087612d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Balayage",
-    subtitle: "Future Angels Salon",
-    description: "Hand-painted highlights for a natural, sun-kissed look. Adds dimension and depth to any hair type."
+    subtitle: "Creamy Blonde",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-olLqW0tN3k9VUVq9xPXHOLZbRz3H7U.png",
+    description: "Soft creamy blonde balayage with natural dimension",
   },
   {
-    image: "https://images.unsplash.com/photo-1542849596-f04c63673f8e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Brazilian Keratin",
-    subtitle: "Hair Treatments",
-    description: "Transform your hair with our smoothing keratin treatment. Eliminates frizz and adds incredible shine."
+    title: "Balayage",
+    subtitle: "Light Caramel",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-0cfHdheGzRP16TQpb9xj0veMiS3U7p.png",
+    description: "Rich caramel highlights for a sun-kissed look",
   },
   {
-    image: "https://images.unsplash.com/photo-1596464525895-88a0b021966a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Kids Cut",
-    subtitle: "Barbershop",
-    description: "A fun and stress-free haircut experience for your little one. We make sure they leave with a smile."
+    title: "Balayage",
+    subtitle: "Coffee Brown",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VRLMmxDPQZRghKq6JAuPkl7qIfLEPO.png",
+    description: "Deep coffee brown with subtle balayage accents",
   },
   {
-    image: "https://images.unsplash.com/photo-1554904870-20517596d11f?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Classic Cut",
-    subtitle: "Barbershop",
-    description: "The timeless classic haircut. Perfect lines and a precise finish for a refined look."
+    title: "Balayage",
+    subtitle: "Pearl Blonde",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DKc7C10BC7VWFU8m9jO9JFUyGVr3ZG.png",
+    description: "Luxurious pearl blonde highlights with natural dimension",
   },
   {
-    image: "https://images.unsplash.com/photo-1603503816503-2b2c938a1677?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Women's Dry Cut",
-    subtitle: "Barbershop",
-    description: "A quick and stylish dry cut for women on the go. Perfect for maintaining your style with precision."
+    title: "Balayage",
+    subtitle: "Lux Blonde",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PgtBTczdKW3io7cqCxPePVRFRQSbA8.png",
+    description: "Premium blonde balayage for sophisticated elegance",
   },
-];
+]
 
 export function PortfolioSection() {
   return (
