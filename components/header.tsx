@@ -54,7 +54,7 @@ export function Header() {
                 >
                   URBAN NEW CONCEPT
                 </h1>
-                <span className={`text-[0.65em] md:text-sm font-light
+                <span className={`text-[0.65em] md:text-sm font-light tracking-widest
                   ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
                 `}>
                   By Murillo & Rodrigo
