@@ -187,12 +187,14 @@ export function Header() {
                 >
                   About
                 </Link>
-                <Button
-                  asChild
-                  className="w-full bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-sm uppercase tracking-wide mt-2"
-                >
-                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
-                </Button>
+<Button
+  asChild
+  className="bg-transparent border border-white/30 hover:bg-white hover:text-black text-white px-8 py-3 text-sm font-normal rounded-sm uppercase tracking-wide transition-colors duration-300"
+>
+  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">
+    BOOK HERE
+  </a>
+</Button>
               </div>
             </div>
           )}
