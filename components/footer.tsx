@@ -15,10 +15,12 @@ export function Footer() {
             <div className="space-y-4 text-neutral-600">
               <div>
                 <p className="font-medium">Hair Salon</p>
+                <p className="font-medium">(Future Angels Salon)</p>
                 <p className="text-sm">53 The Runway, Wigram</p>
               </div>
               <div>
                 <p className="font-medium">Barbershop</p>
+                <p className="font-medium">(Close to Moorhouse Ave)</p>
                 <p className="text-sm">456 Colombo St / Sydenham</p>
               </div>
             </div>
