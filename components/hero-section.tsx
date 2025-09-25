@@ -46,7 +46,7 @@ export function HeroSection() {
             >
               <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">
                 BOOK YOUR APPOINTMENT →
-              </a>
+              </a>s
             </Button>
 
             <Button
