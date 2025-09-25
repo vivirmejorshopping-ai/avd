@@ -1,5 +1,5 @@
 import { Instagram, Facebook, MessageCircle } from "lucide-react"
-
+import Image from "next/image";
 const portfolioItems = [
   {
     title: "Medium Brown",
