@@ -21,20 +21,21 @@ export function HeroSection() {
         src="/images/hero-team.jpg"
         alt="Urban New Concept Team - Murillo and Rodrigo"
         fill
-        className="object-contain object-center"
+        className="object-cover object-top"
         priority
       />
 
       {/* Camada do Gradiente (2ª camada, semi-transparente) */}
+      <div className="absolute inset-0 bg-black/40 z-10"></div>
 
       {/* Camada do Conteúdo (3ª camada, o texto e botões) */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full">
         <div className="text-center text-white max-w-4xl px-4">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-4 tracking-tight leading-tight">
+          <h1 className="text-3xl md:text-6xl lg:text-7xl font-light mb-2 tracking-tight leading-tight">
             Fabulous Hair Isn't Just <span className="text-white/40 font-light">Style</span>
           </h1>
 
-          <p className="text-lg md:text-xl font-light mb-12 opacity-80 tracking-wide">
+          <p className="text-base md:text-xl font-light mb-8 opacity-80 tracking-wide">
             it's confidence you wear every day
           </p>
 
