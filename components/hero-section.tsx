@@ -14,7 +14,7 @@ export function HeroSection() {
     <section
       id="home"
       className="relative h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/elegant-hair-salon-interior-with-modern-styling-ch.jpg')" }}
+      style={{ backgroundImage: "url('/murilo.jpg')" }}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-green-800/15 to-stone-800/25" />
 
