@@ -34,7 +34,7 @@ export function Header() {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
-  return (
+return (
     <>
       <header
         className={`
@@ -55,7 +55,15 @@ export function Header() {
               </h1>
             </Link>
 
-            <div className="md:hidden">
+            {/* Este é o novo contêiner para a versão móvel */}
+            <div className="flex items-center md:hidden">
+              {/* Adicionando o botão de agendamento fixo aqui */}
+              <Button
+                asChild
+                className="bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
+              >
+                <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK</a>
+              </Button>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className={`p-2 transition-colors duration-300 ${
@@ -177,15 +185,6 @@ export function Header() {
         </div>
       </header>
 
-      <div className="fixed top-6 right-6 z-50 md:hidden">
-        <Button
-          asChild
-          className="bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
-        >
-          <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK</a>
-        </Button>
-      </div>
-
       {showToTop && (
         <button
           onClick={scrollToTop}
@@ -200,7 +199,6 @@ export function Header() {
     </>
   );
 }
-
 
 
 
