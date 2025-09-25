@@ -14,14 +14,14 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative h-screen overflow-hidden" // O overflow-hidden é importante para o Image fill
+      className="relative h-screen overflow-hidden bg-black" // Adicionei bg-black para preencher o espaço do object-contain
     >
       {/* Imagem de Fundo Otimizada */}
       <Image
         src="/murilo.jpg" // Verifique se o caminho da imagem está correto
         alt="Urban New Concept - Murilo and Rodrigo"
         fill // 'fill' faz a imagem preencher o contêiner pai
-        className="object-cover object-center object-position-top" // object-position-top evita que os rostos sejam cortados
+        className="object-contain object-center" // Alterado para object-contain para mostrar a imagem inteira
         priority // 'priority' carrega a imagem mais rápido por ser a principal da página
       />
 
