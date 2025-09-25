@@ -46,7 +46,7 @@ export function Header() {
           <div className="flex items-center justify-between">
             {/* Logo - Left */}
             <Link href="/" onClick={() => handleNavigation("/")} className="flex-shrink-0">
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col items-center">
                 <h1
                   className={`text-sm md:text-lg font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
                     ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
@@ -54,7 +54,7 @@ export function Header() {
                 >
                   URBAN NEW CONCEPT
                 </h1>
-                <span className={`text-xs md:text-sm font-light
+                <span className={`text-[0.65em] md:text-sm font-light
                   ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
                 `}>
                   By Murillo & Rodrigo
