@@ -1,14 +1,15 @@
-import { Button } from "@/components/ui/button";
-import heroMobile from "@/assets/hero-team-mobile.jpg";
-import heroDesktop from "@/assets/hero-team-desktop.jpg";
+"use client"
+
+import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function HeroSection() {
   const scrollToPortfolio = () => {
-    const element = document.getElementById("portfolio");
+    const element = document.getElementById("portfolio")
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: "smooth" })
     }
-  };
+  }
 
   return (
     <section
@@ -16,17 +17,21 @@ export function HeroSection() {
       className="relative h-screen overflow-hidden"
     >
       {/* Imagem para Mobile */}
-      <img
-        src={heroMobile}
+      <Image
+        src="/images/hero-team-mobile.jpg"
         alt="Urban New Concept Team - Murillo and Rodrigo"
-        className="absolute inset-0 w-full h-full object-cover object-center md:hidden"
+        fill
+        className="object-contain object-center md:hidden"
+        priority
       />
 
       {/* Imagem para Desktop */}
-      <img
-        src={heroDesktop}
+      <Image
+        src="/images/hero-team-desktop.jpg"
         alt="Urban New Concept Team - Murillo and Rodrigo"
-        className="absolute inset-0 w-full h-full object-cover object-center hidden md:block"
+        fill
+        className="object-contain object-center hidden md:block"
+        priority
       />
 
       {/* Camada do Gradiente */}
@@ -71,5 +76,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }
