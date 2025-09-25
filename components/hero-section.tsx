@@ -54,7 +54,7 @@ export function HeroSection() {
               variant="outline"
               className="border-white/30 text-white hover:bg-white hover:text-black px-8 py-3 text-sm font-normal rounded-sm bg-transparent uppercase tracking-wide"
             >
-              VIEW PORTFOLIO
+              VIEW PORTFOLIOS
             </Button>
           </div>
         </div>
