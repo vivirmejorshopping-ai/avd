@@ -26,7 +26,6 @@ export function HeroSection() {
       />
 
       {/* Camada do Gradiente (2ª camada, semi-transparente) */}
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-900/60 via-green-800/50 to-stone-800/70 z-10" />
 
       {/* Camada do Conteúdo (3ª camada, o texto e botões) */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full">
