@@ -18,10 +18,10 @@ export function HeroSection() {
     >
       {/* Camada da Imagem de Fundo (1ª camada) */}
       <Image
-        src="/images/murilo.jpg"
-        alt="Urban New Concept - Murilo and Rodrigo"
+        src="/images/hero-team.jpg"
+        alt="Urban New Concept Team - Murillo and Rodrigo"
         fill
-        className="object-cover object-center"
+        className="object-contain object-center"
         priority
       />
 
