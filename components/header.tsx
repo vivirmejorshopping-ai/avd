@@ -34,7 +34,7 @@ export function Header() {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
-  return (
+return (
     <>
       <header
         className={`
@@ -46,12 +46,12 @@ export function Header() {
           <div className="flex items-center justify-between">
             <Link href="/" onClick={() => handleNavigation("/")}>
               <h1
-                className={`text-sm md:text-lg font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
+                className={`text-xs md:text-sm font-normal tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer
                   ${isScrolled || !isHomePage ? "text-sage" : "text-white/90"}
                 `}
               >
                 URBAN NEW CONCEPT <br />
-                <span className="text-xs md:text-sm">By Murillo & Rodrigo</span>
+                <span className="text-[0.7em] md:text-[0.8em]">By Murillo & Rodrigo</span>
               </h1>
             </Link>
 
@@ -121,7 +121,7 @@ export function Header() {
               </Link>
             </nav>
 
-            <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 hidden md:block">
+            <div className="fixed top-6 right-6 z-50 hidden md:block">
               <Button
                 asChild
                 variant="outline"
@@ -149,14 +149,14 @@ export function Header() {
                   onClick={() => handleNavigation("/services")}
                   className="block text-sage hover:text-sage/80 transition-colors font-medium py-1"
                 >
-                  Services
+                  Services now
                 </Link>
                 <Link
                   href="/price-list"
                   onClick={() => handleNavigation("/price-list")}
                   className="block text-sage hover:text-sage/80 transition-colors font-medium py-1"
                 >
-                  Barbershop Price List
+                  Barbershop Price Liste 
                 </Link>
                 <Link
                   href="/contact"
@@ -176,7 +176,7 @@ export function Header() {
                   asChild
                   className="w-full bg-sage hover:bg-sage/90 text-white px-4 py-2 text-sm font-normal rounded-sm uppercase tracking-wide mt-2"
                 >
-                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
+                  <a href="https://www.fresha.com/pt/p/msdasd3402928">BOOK HEREs</a>
                 </Button>
               </div>
             </div>
@@ -198,3 +198,6 @@ export function Header() {
     </>
   );
 }
+
+
+
