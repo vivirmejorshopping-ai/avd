@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Scissors } from "lucide-react"
+import { MapPin, Phone, Clock, Scissors, Calendar, Barbell } from "lucide-react"
 
 const locations = [
   {
@@ -8,20 +8,22 @@ const locations = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LU6UtYYJ2ixvAqVOwr76MW9sWmhIww.png",
     description: "Our flagship salon offering full hair styling, color treatments, and luxury services",
     services: ["Balayage & Color", "Brazilian Keratin", "Cuts & Styling", "Hair Treatments"],
-    hours: "Mon, Wed, Fri, Sat: 9:30AM-6PM Sun: 10am-5pm",
+    hours: "Mon, Wed, Fri, Sat: 9:30am-6pm <br /> Sun: 10am-5pm",
     bookingText: "Book Online",
+    bookingIcon: Calendar,
     mapLink:
       "https://www.google.com/maps/dir/-43.560516,172.654929/Urban+New+Concept,+Curletts+Road,+Sockburn,+Christchurch/@-43.5486578,172.5291973,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x6d31f5c6d1b1a951:0x107b95d6e290b5fc!2m2!1d172.5679479!2d-43.537482!3e0?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D",
   },
   {
     type: "Barbershop - (Close to Moorhouse Ave)",
-    icon: Scissors,
+    icon: Barbell,
     address: "456 Colombo St / Sydenham",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Gxv9OQiYchIvj8kXdMGtgHwEl6qBmU.png",
     description: "Professional barbering services with a modern touch for the discerning gentleman",
     services: ["Classic Cuts", "Beard Trim", "Fade Cut", "Kids Cut","Women's Dry Cut"],
-    hours: "Tue - Sat: 10AM-5PM Sun: 10am - 3pm",
+    hours: "Tue - Sat: 10am-5pm <br /> Sun: 10am - 3pm",
     bookingText: "Just Walk in",
+    bookingIcon: MapPin,
     mapLink:
       "https://www.google.com/maps/dir//Urban+New+Concept+-+Barbershop+456+Colombo+Street,+Sydenham,+Christchurch+8023/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x6d318ba564845c0b:0x333ca5b65dfda6ee?sa=X&ved=1t:57443&ictx=111",
   },
@@ -85,10 +87,10 @@ export function LocationsSection() {
                   </div>
                   <div className="flex items-center text-neutral-600">
                     <Clock className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
-                    <span className="text-sm">{location.hours}</span>
+                    <span className="text-sm" dangerouslySetInnerHTML={{ __html: location.hours }}></span>
                   </div>
                   <div className="flex items-center text-neutral-600">
-                    <MapPin className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
+                    <location.bookingIcon className="h-4 w-4 text-[#9fa089] mr-3 flex-shrink-0" />
                     <span className="text-sm">{location.bookingText}</span>
                   </div>
                 </div>
