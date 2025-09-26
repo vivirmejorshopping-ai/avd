@@ -37,17 +37,14 @@ const portfolioItems = [
 
 export function PortfolioSection() {
   const handleInstagramClick = (e) => {
-    // Verifica se o usuário está em um dispositivo móvel
+    // Tenta abrir o deep link do Instagram
+    const instagramAppUrl = "instagram://user?username=urbannewconcept";
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    
+
     if (isMobile) {
-      // Previna o comportamento padrão de abrir o link em uma nova aba
       e.preventDefault();
-      
-      // Tente abrir o link direto para o aplicativo do Instagram
-      window.location.href = "instagram://user?username=urbannewconcept";
+      window.location.href = instagramAppUrl;
     }
-    // Se não for mobile, o comportamento padrão do link (abrir em nova aba) será mantido.
   };
 
   return (
@@ -77,7 +74,7 @@ export function PortfolioSection() {
               <span className="text-sm">Facebook</span>
             </a>
             <a
-              href="https://wa.me/64273872221?text=Olá, gostaria de agendar um horário."
+              href="https://wa.me/64273310024?text=Olá, gostaria de agendar um horário."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
