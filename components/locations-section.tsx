@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Scissors, Calendar, Barbell } from "lucide-react"
+import { MapPin, Phone, Clock, Scissors, Calendar } from "lucide-react"
 
 const locations = [
   {
@@ -16,7 +16,7 @@ const locations = [
   },
   {
     type: "Barbershop - (Close to Moorhouse Ave)",
-    icon: Barbell,
+    icon: Scissors, // Alterado para Scissors para evitar o erro de importação
     address: "456 Colombo St / Sydenham",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Gxv9OQiYchIvj8kXdMGtgHwEl6qBmU.png",
     description: "Professional barbering services with a modern touch for the discerning gentleman",
