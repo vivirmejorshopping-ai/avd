@@ -74,7 +74,7 @@ export function PortfolioSection() {
               <span className="text-sm">Facebook</span>
             </a>
             <a
-              href="https://wa.me/64273310024?text=Olá, gostaria de agendar um horário."
+              href="https://wa.me/64273310024"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
