@@ -84,16 +84,16 @@ export default function ContactPage() {
                       <div className="text-center">
                         <h3 className="font-semibold text-gray-900 mb-3 text-lg">Hair Salon</h3>
                         <h3 className="font-semibold text-gray-900 mb-3 text-lg">(Future Angels Salon)</h3>
-                        <p className="text-gray-600 leading-relaxed">Mon, Wed, Fri, Sat: 9:30am - 6pm</p>
-                        <p className="text-gray-600 leading-relaxed">Sun: 10am - 5pm</p>
+                        <p className="text-gray-600 leading-relaxed">Mon, Wed, Fri, Sat: 9:30AM - 6PM</p>
+                        <p className="text-gray-600 leading-relaxed">Sun: 10AM - 5PM</p>
                       </div>
 
                       <div className="text-center">
                         <h3 className="font-semibold text-gray-900 mb-3 text-lg">Barbershop</h3>
                         <h3 className="font-semibold text-gray-900 mb-3 text-lg">(Close to Moorhouse Ave)</h3>
                         <p className="text-gray-600 text-sm mb-2">(Walk in Only)</p>
-                        <p className="text-gray-600 leading-relaxed">Tue - Sat: 10am - 5pm</p>
-                        <p className="text-gray-600 leading-relaxed">Sun: 10am - 3pm</p>
+                        <p className="text-gray-600 leading-relaxed">Tue - Sat: 10AM - 5PM</p>
+                        <p className="text-gray-600 leading-relaxed">Sun: 10AM - 3PM</p>
                       </div>
                     </div>
                   </div>
