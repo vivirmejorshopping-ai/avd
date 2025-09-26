@@ -74,7 +74,7 @@ export function PortfolioSection() {
               <span className="text-sm">Facebook</span>
             </a>
             <a
-              href="https://api.whatsapp.com/message/NH3I4F3R7LLIJ1?autoload=1&app_absent=0"
+              href="https://wa.me/64273310024"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
