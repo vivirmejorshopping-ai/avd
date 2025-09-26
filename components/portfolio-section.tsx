@@ -71,7 +71,7 @@ export function PortfolioSection() {
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
             >
               <Facebook className="h-4 w-4" />
-              <span className="text-sm">Facebook</span>
+              <span className="text-sm">Facebooks</span>
             </a>
             <a
               href="https://wa.me/64273310024"
