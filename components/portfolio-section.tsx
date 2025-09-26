@@ -65,13 +65,13 @@ export function PortfolioSection() {
               <span className="text-sm">@urbannewconcept</span>
             </a>
             <a
-              href="https://www.facebook.com/UrbanNewConcept-107779774577826"
+              href="https://www.facebook.com/profile.php?id=100087297703895"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
             >
               <Facebook className="h-4 w-4" />
-              <span className="text-sm">Facebooks</span>
+              <span className="text-sm">Facebook</span>
             </a>
             <a
               href="https://wa.me/64273310024"
