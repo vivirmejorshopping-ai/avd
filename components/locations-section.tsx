@@ -8,7 +8,7 @@ const locations = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LU6UtYYJ2ixvAqVOwr76MW9sWmhIww.png",
     description: "Our flagship salon offering full hair styling, color treatments, and luxury services",
     services: ["Balayage & Color", "Brazilian Keratin", "Cuts & Styling", "Hair Treatments"],
-    hours: "Mon, Wed, Fri, Sat: 9:30am-6pm <br /> Sun: 10am-5pm",
+    hours: "Mon, Wed, Fri, Sat: 9:30AM-6PM <br /> Sun: 10AM-5PM",
     bookingText: "Book Online",
     bookingIcon: Calendar,
     mapLink:
@@ -21,9 +21,9 @@ const locations = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Gxv9OQiYchIvj8kXdMGtgHwEl6qBmU.png",
     description: "Professional barbering services with a modern touch for the discerning gentleman",
     services: ["Classic Cuts", "Beard Trim", "Fade Cut", "Kids Cut","Women's Dry Cut"],
-    hours: "Tue - Sat: 10am-5pm <br /> Sun: 10am - 3pm",
+    hours: "Tue - Sat: 10AM-5PM <br /> Sun: 10AM - 3PM",
     bookingText: "Just Walk in",
-    bookingIcon: Map, // Ícone alterado para 'Map'
+    bookingIcon: Map, 
     mapLink:
       "https://www.google.com/maps/dir//Urban+New+Concept+-+Barbershop+456+Colombo+Street,+Sydenham,+Christchurch+8023/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x6d318ba564845c0b:0x333ca5b65dfda6ee?sa=X&ved=1t:57443&ictx=111",
   },

@@ -41,7 +41,7 @@ export function PortfolioSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-light text-neutral-800 mb-8">Portfolio</h2>
 
-          <div className="flex justify-center items-center space-x-8 mb-12">
+          <div className="flex justify-center items-center space-x-4 md:space-x-8 mb-12">
             <a
               href="https://www.instagram.com/urbannewconcept/"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
