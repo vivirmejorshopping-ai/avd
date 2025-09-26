@@ -1,3 +1,4 @@
+"use client";
 import { Instagram, Facebook, MessageCircle } from "lucide-react";
 import Image from "next/image";
 
@@ -35,6 +36,24 @@ const portfolioItems = [
 ];
 
 export function PortfolioSection() {
+  const handleInstagramClick = (e) => {
+    // Tenta abrir o deep link do Instagram
+    const instagramAppUrl = "instagram://user?username=urbannewconcept";
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = instagramAppUrl;
+      
+      // Fallback para o navegador se o deep link não funcionar
+      setTimeout(() => {
+        window.location.href = "https://www.instagram.com/urbannewconcept/";
+      }, 1000); // Espera 1 segundo para o app abrir
+    } else {
+      // Para desktop, abre em nova aba
+      window.open("https://www.instagram.com/urbannewconcept/", "_blank");
+    }
+  };
+
   return (
     <section id="portfolio" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -43,7 +62,8 @@ export function PortfolioSection() {
 
           <div className="flex justify-center items-center space-x-4 md:space-x-8 mb-12">
             <a
-              href="instagram://user?username=urbannewconcept"
+              href="https://www.instagram.com/urbannewconcept/"
+              onClick={handleInstagramClick}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
