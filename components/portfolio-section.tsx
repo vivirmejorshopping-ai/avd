@@ -1,4 +1,3 @@
-"use client";
 import { Instagram, Facebook, MessageCircle } from "lucide-react";
 import Image from "next/image";
 
@@ -72,7 +71,7 @@ export function PortfolioSection() {
               <span className="text-sm">@urbannewconcept</span>
             </a>
             <a
-              href="https://www.facebook.com/UrbanNewConcept-107779774577826"
+              href="https://www.facebook.com/profile.php?id=100087297703895"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
