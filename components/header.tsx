@@ -62,6 +62,16 @@ export function Header() {
               </div>
             </Link>
 
+            {/* Menu Mobile Button - Center (apenas em mobile) */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className={`p-2 transition-colors duration-300 text-2xl md:hidden ${
+                isScrolled || !isHomePage ? "text-sage" : "text-white/90"
+              }`}
+            >
+              {isMobileMenuOpen ? "✕" : "☰"}
+            </button>
+
             {/* Navigation - Center (Desktop) */}
             <div className="flex-1 flex justify-center hidden md:flex">
               <nav className="flex items-center space-x-8">
@@ -113,42 +123,26 @@ export function Header() {
               </nav>
             </div>
 
-            {/* Content - Right (Mobile and Desktop) */}
-            <div className="flex items-center space-x-3 md:space-x-0">
-              {/* Mobile: Button and hamburger */}
-              {/* Alinhamento para mobile (foto) */}
-              <div className="flex items-center space-x-3 md:hidden">
-                <button
-                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                  className={`p-2 transition-colors duration-300 text-xl ${
-                    isScrolled || !isHomePage ? "text-sage" : "text-white/90"
-                  }`}
-                >
-                  {isMobileMenuOpen ? "✕" : "☰"}
-                </button>
-                <Button
-                  asChild
-                  className="bg-sage hover:bg-sage/90 text-white px-3 py-1.5 text-sm font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105"
-                >
-                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK NOW</a>
-                </Button>
-              </div>
-
-              {/* Desktop Button - Right */}
-              <div className="hidden md:block">
-                <Button
-                  asChild
-                  variant="outline"
-                  className={`book-button border-white/30 text-white hover:bg-white hover:text-black px-6 py-2 text-xs font-normal rounded-sm bg-transparent uppercase tracking-wide transition-all duration-300 ${
-                    isScrolled || !isHomePage ? "border-sage text-sage hover:bg-sage hover:text-white" : ""
-                  }`}
-                >
-                  <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
-                </Button>
-              </div>
+            {/* Botão de Agendamento - Right */}
+            <Button
+              asChild
+              className="bg-sage hover:bg-sage/90 text-white px-3 py-1.5 text-sm font-normal rounded-full uppercase tracking-wide shadow-lg transition-transform duration-300 transform hover:scale-105 md:hidden"
+            >
+              <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK NOW</a>
+            </Button>
+            {/* Botão de Desktop - Right */}
+            <div className="hidden md:block">
+              <Button
+                asChild
+                variant="outline"
+                className={`book-button border-white/30 text-white hover:bg-white hover:text-black px-6 py-2 text-xs font-normal rounded-sm bg-transparent uppercase tracking-wide transition-all duration-300 ${
+                  isScrolled || !isHomePage ? "border-sage text-sage hover:bg-sage hover:text-white" : ""
+                }`}
+              >
+                <a href="https://www.fresha.com/pt/p/murillo-de-oliveira-duque-3402928">BOOK HERE</a>
+              </Button>
             </div>
           </div>
-
 
           {isMobileMenuOpen && (
             <div className="md:hidden mt-3 bg-white/95 backdrop-blur-lg rounded-lg shadow-lg border border-sage/20">
