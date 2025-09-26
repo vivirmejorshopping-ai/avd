@@ -1,3 +1,4 @@
+"use client";
 import { Instagram, Facebook, MessageCircle } from "lucide-react";
 import Image from "next/image";
 
@@ -36,21 +37,17 @@ const portfolioItems = [
 
 export function PortfolioSection() {
   const handleInstagramClick = (e) => {
-    // Tenta abrir o deep link do Instagram
-    const instagramAppUrl = "instagram://user?username=urbannewconcept";
+    // Verifica se o usuário está em um dispositivo móvel
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
+    
     if (isMobile) {
-      window.location.href = instagramAppUrl;
+      // Previna o comportamento padrão de abrir o link em uma nova aba
+      e.preventDefault();
       
-      // Fallback para o navegador se o deep link não funcionar
-      setTimeout(() => {
-        window.location.href = "https://www.instagram.com/urbannewconcept/";
-      }, 1000); // Espera 1 segundo para o app abrir
-    } else {
-      // Para desktop, abre em nova aba
-      window.open("https://www.instagram.com/urbannewconcept/", "_blank");
+      // Tente abrir o link direto para o aplicativo do Instagram
+      window.location.href = "instagram://user?username=urbannewconcept";
     }
+    // Se não for mobile, o comportamento padrão do link (abrir em nova aba) será mantido.
   };
 
   return (
@@ -71,7 +68,7 @@ export function PortfolioSection() {
               <span className="text-sm">@urbannewconcept</span>
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=100087297703895"
+              href="https://www.facebook.com/UrbanNewConcept-107779774577826"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
@@ -80,7 +77,7 @@ export function PortfolioSection() {
               <span className="text-sm">Facebook</span>
             </a>
             <a
-              href="https://api.whatsapp.com/message/NH3I4F3R7LLIJ1?autoload=1&app_absent=0"
+              href="https://wa.me/64273872221?text=Olá, gostaria de agendar um horário."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-neutral-600 hover:text-neutral-800 transition-colors"
