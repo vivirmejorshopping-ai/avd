@@ -41,7 +41,7 @@ export default function ServicesPage() {
                   </div>
                   <div className="flex justify-between items-start border-b border-neutral-100 pb-2">
                     <span className="flex-1 pr-4 text-neutral-700">MEN'S CUT:</span>
-                    <span className="font-semibold text-sage whitespace-nowrap">$40 (+$5 Wash)</span>
+                    <span className="font-semibold text-sage whitespace-nowrap">$45 (+$5 Wash)</span>
                   </div>
                   <div className="flex justify-between items-start border-b border-neutral-100 pb-2">
                     <span className="flex-1 pr-4 text-neutral-700">CLIPPER CUT:</span>
@@ -84,13 +84,13 @@ export default function ServicesPage() {
                     <span className="flex-1 pr-4 text-neutral-700">
                       HALF HEAD FOILS (with Root Melt, Toner & Finishing):
                     </span>
-                    <span className="font-semibold text-sage whitespace-nowrap">$115 - $200</span>
+                    <span className="font-semibold text-sage whitespace-nowrap">$140 - $220</span>
                   </div>
                   <div className="flex justify-between items-start border-b border-neutral-100 pb-2">
                     <span className="flex-1 pr-4 text-neutral-700">
                       PARTIAL HIGHLIGHTS (with Root Melt & Finishing):
                     </span>
-                    <span className="font-semibold text-sage whitespace-nowrap">$80 - $110</span>
+                    <span className="font-semibold text-sage whitespace-nowrap">$90 - $120</span>
                   </div>
                   <div className="flex justify-between items-start border-b border-neutral-100 pb-2">
                     <span className="flex-1 pr-4 text-neutral-700">TOUCH UP (GREY COVERAGE):</span>
