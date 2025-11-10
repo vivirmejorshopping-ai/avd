@@ -32,7 +32,7 @@ export default function AboutPage() {
       Trained in Brazil, we continuously refine our skills to stay ahead in the industry, driven by a genuine love for what we do.
     </p>
     <p>
-      Our journey as salon owners began in November 2022 in Hornby. In 2024, we relocated to Sockburn, creating a welcoming, family-friendly space where quality and care come first. By 2025, we proudly expanded with a second location — a barbershop on Colombo Street — bringing our commitment to excellence to even more clients.
+      Our journey as salon owners began in November 2022 in Hornby. In 2024, we relocated to Sockburn, creating a welcoming, family-friendly space where quality and care come first.
     </p>
     <p>
       In September 2025, we decided to rent a chair at Future Angels in Wigram, ensuring our clients continue to enjoy the comfort and quality they deserve.

@@ -49,7 +49,7 @@ export default function ContactPage() {
                     <div className="flex items-center justify-center w-16 h-16 bg-sage/10 rounded-full mb-6 mx-auto group-hover:bg-sage/20 transition-colors duration-300">
                       <MapPin className="w-8 h-8 text-sage" />
                     </div>
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Addresses</h2>
+                    <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Address</h2>
 
                     <div className="space-y-8">
                       <div className="text-center">
@@ -58,12 +58,6 @@ export default function ContactPage() {
                         <p className="text-gray-600 leading-relaxed">53 The Runway</p>
                         <p className="text-gray-600 leading-relaxed">Wigram, Christchurch, NZ</p>
                       </div>
-
-                      <div className="text-center">
-                        <h3 className="font-semibold text-gray-900 mb-3 text-lg">Barbershop</h3>
-                        <h3 className="font-semibold text-gray-900 mb-3 text-lg">(Close to Moorhouse Ave)</h3>
-                        <p className="text-gray-600 leading-relaxed">456 Colombo Street</p>
-                        <p className="text-gray-600 leading-relaxed">Sydenham, Christchurch, NZ</p>
                       </div>
                     </div>
                   </div>
@@ -88,12 +82,6 @@ export default function ContactPage() {
                         <p className="text-gray-600 leading-relaxed">Sun: 10AM - 5PM</p>
                       </div>
 
-                      <div className="text-center">
-                        <h3 className="font-semibold text-gray-900 mb-3 text-lg">Barbershop</h3>
-                        <h3 className="font-semibold text-gray-900 mb-3 text-lg">(Close to Moorhouse Ave)</h3>
-                        <p className="text-gray-600 text-sm mb-2">(Walk in Only)</p>
-                        <p className="text-gray-600 leading-relaxed">Tue - Sat: 10AM - 5PM</p>
-                        <p className="text-gray-600 leading-relaxed">Sun: 10AM - 3PM</p>
                       </div>
                     </div>
                   </div>
