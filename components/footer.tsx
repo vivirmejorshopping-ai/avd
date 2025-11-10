@@ -6,7 +6,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-normal text-sage mb-4 tracking-wide uppercase">URBAN NEW CONCEPT</h3>
             <p className="text-neutral-600 mb-6 leading-relaxed">
-              Professional hair styling and barbershop services in Christchurch.
+              Professional hair styling services in Christchurch.
             </p>
           </div>
 
