@@ -94,15 +94,6 @@ export function Header() {
                   Services
                 </Link>
                 <Link
-                  href="/price-list"
-                  onClick={() => handleNavigation("/price-list")}
-                  className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
-                    isScrolled || !isHomePage ? "text-sage" : "text-white/90"
-                  }`}
-                >
-                  Barbershop Price List
-                </Link>
-                <Link
                   href="/contact"
                   onClick={() => handleNavigation("/contact")}
                   className={`text-xs font-normal uppercase tracking-wide transition-colors duration-300 hover:opacity-80 ${
@@ -160,13 +151,6 @@ export function Header() {
                   className="block text-sage hover:text-sage/80 transition-colors font-medium py-1"
                 >
                   Services
-                </Link>
-                <Link
-                  href="/price-list"
-                  onClick={() => handleNavigation("/price-list")}
-                  className="block text-sage hover:text-sage/80 transition-colors font-medium py-1"
-                >
-                  Barbershop Price List
                 </Link>
                 <Link
                   href="/contact"
