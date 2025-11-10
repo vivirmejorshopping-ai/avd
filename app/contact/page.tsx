@@ -27,7 +27,7 @@ export default function ContactPage() {
       ...formData,
       [e.target.name]: e.target.value,
     })
-  }
+  } // CHAVE EXTRA REMOVIDA AQUI!
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -58,7 +58,6 @@ export default function ContactPage() {
                         <p className="text-gray-600 leading-relaxed">53 The Runway</p>
                         <p className="text-gray-600 leading-relaxed">Wigram, Christchurch, NZ</p>
                       </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -82,7 +81,6 @@ export default function ContactPage() {
                         <p className="text-gray-600 leading-relaxed">Sun: 10AM - 5PM</p>
                       </div>
 
-                      </div>
                     </div>
                   </div>
                 </div>
